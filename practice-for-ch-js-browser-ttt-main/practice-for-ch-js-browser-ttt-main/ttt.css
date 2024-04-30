@@ -1,12 +1,25 @@
 /* Your code here */
 
 ul {
+    margin-left: 200px;
+    margin-top: 50px;
     display: flex;
-    width: 90px;
+    width: 400px;
+    height: 360px;
     flex-wrap: wrap;
 }
 
 li {
-    color: black;
-    border-style: solid;
+    background-color: gray;
+    width:120px;
+    border: 2px solid black;
+    list-style-type: none;
+}
+h1 {
+    margin-left: 270px;
+    font-size: 30px;
+}
+
+li:hover {
+    background-color: yellow;
 }

@@ -1,25 +1,27 @@
 import Board from "../ttt_node/board";
 
 class View {
-  constructor(game, el) {
+  constructor(game, containerEle) {
     this.game = game;
-    this.el = el;
+    this.containerEle = containerEle;
     this.setupBoard()
   }
   
   setupBoard() {
-    const x = document.createElement('ul');
-    this.el.appendChild(x)
-
+    const grid = document.createElement('ul');
+    this.containerEle.appendChild(grid)
     for (let i = 0; i < 3; i++) {
       for (let j = 0; j < 3; j++) {
         const gridCell = document.createElement('li');
-        x.appendChild(gridCell)
+        gridCell.dataset.row = i;
+        gridCell.dataset.col = j;
+        grid.appendChild(gridCell)
       }
     }
   }
   
   handleClick(e) {
+   
   }
 
   makeMove(square) {
