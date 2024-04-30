@@ -1,5 +1,11 @@
-Add your import statements for View and Game here
+import View from "./ttt-view";
+import Game from "../ttt_node/game.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Your code here
+
+  const game = new Game();
+  const gridEle = document.getElementById("grid");
+  const view = new View(game, gridEle);
+
+
 });

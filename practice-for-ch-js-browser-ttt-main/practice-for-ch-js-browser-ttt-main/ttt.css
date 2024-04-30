@@ -1,1 +1,12 @@
 /* Your code here */
+
+ul {
+    display: flex;
+    width: 90px;
+    flex-wrap: wrap;
+}
+
+li {
+    color: black;
+    border-style: solid;
+}
